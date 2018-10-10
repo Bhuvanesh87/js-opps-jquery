@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h3>Mouse events</h3>
+<button id="btn1">Button 1</button>  
+<button id="btn2">Button 2</button> 
+<button id="btn3">Button 3</button>  
+<button id="btn4">Button 4</button>      
+<p id="p1">
+        Lorem ipsum, in graphical and textual context, refers to filler text that is placed in a document or visual presentation.
+        Lorem ipsum is derived from the Latin "dolorem ipsum" roughly translated as "pain itself."<span> Lorem ipsum presents the sample 
+        font and orientation of writing on Web pages and other software </span>applications where content is not the main concern of the developer.
+
+</p>
+
+<script>
+    
+    $('#btn1').on('click',function()
+    {
+        $('#p1').toggle();
+
+    });
+    $('#btn2').on('click',function()
+    {
+        $('#p1').hide();
+
+    });
+    $('#btn3').on('click',function()
+    {
+        $('#p1').show();
+
+    });
+    $('#btn4').hover(function()
+    {
+        $('#p1').toggle();
+
+    });
+
+</script>
+</body>
+</html>

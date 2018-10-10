@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+        <ul id="list">
+             <li>List item1</li>
+             <li>List item2</li>
+             <li>List item3</li>
+             <li>List item4</li>
+             <li>List item5</li>
+
+        </ul>
+        <ol class="ol1">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+        </ol>
+
+
+</p>
+<script>
+    
+    $('ul#list li:even').css('color','red');
+    $('ul#list li:even').css('background-color','yellow');
+    $('ul#list li:odd').css('color','green');
+    $('ul#list li:odd').css('background-color','grey');
+
+    $('ol.ol1 li:even').css('color','brown');
+    $('ol.ol1 li:even').css('background-color','powderblue');
+    $('ol.ol1 li:odd').css('color','orange');
+    $('ol.ol1 li:odd').css('background-color','pink');
+    $('ol.ol1 li:nth-child(3)').css('style','none');
+
+</script>
+</body>
+</html>
